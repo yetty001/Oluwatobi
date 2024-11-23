@@ -1,0 +1,108 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #93e4c1; 
+    color: #118a7e; 
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    color: #1f6f78;
+}
+
+.tagline {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px
+}
+
+.memories {
+    margin-bottom: 40px;
+    border-radius: 35px;
+    background: #3baea0;
+    
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap : 20px;
+}
+
+.grid-item {
+    border-radius: 100px;
+}
+
+.grid-item img,
+.grid-item video {
+    width: 200px;
+    height: auto;
+    border: 3px solid #1f6f78;
+    border-radius: 10px;
+    transform: translate (30px, 20px) rotate(20deg)
+
+}
+.grid-item img,
+.grid-item video.hover {
+   transition: cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.birthday-message {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #1f6f78;
+    border-radius: 5px;
+    width: 80%;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background: #1f6f78;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1f6f78;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+li {
+    background:  #3baea0; 
+    color: #93e4c1;
+    border-radius: 50px;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-style: italic;
+}
+
+
