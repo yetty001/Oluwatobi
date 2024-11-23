@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> To My Love</title>
+  </head>
+  <style>
+    body { 
+     background: linear-gradient(44.8deg, rgba(255, 136, 102, 0.67) -53.1%, rgba(255, 221, 136, 0.28) 49%);
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+    }
+    P {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .tobi-intro-pic {
+      border-radius: 10px;
+      transition: all 150ms ease-in-out;
+    }
+    .tobi-intro-pic:hover {
+      opacity: 0.7;
+      filter: contrast(50%);
+      transform: scale(1.1);
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+  
+    strong {
+      font-size: 20px;
+    }
+    button {
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      margin: 10px 0;
+      font-size: 18px;
+      color: white;
+    }
+    .theme-button {
+      font-size: 10px;
+      background-color: black;
+      color: white;
+      padding: 5px 8px;
+    }
+    .theme-button:hover {
+      background-color: white;
+      color: black;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-rows: auto auto;
+      grid-template-columns: auto auto;
+      gap: 10px;
+    }
+
+
+    .grid {
+      margin: 50px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 20px;
+    }
+    .grid img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .grid img:hover {
+      transform: scale(2);
+    }
+    .dark {
+      background-color: black;
+      color: white;
+    }
+
+    .dark .container {
+      background-color: rgba(225, 225, 225, 0.1);
+    }
+    .dark a {
+      color: #f4aeba;
+    }
+  </style>
+  <body>
+    <button class="theme-button">change theme</button>
+    <div class="container">
+      <h1>Happy Birthday🎉🎉🎊
+        <br>
+         my love</h1>
+      <p>Even miles apart, you are always in my heart ❤️</p>
+
+     <div class="grid-container">
+       <video width="320" height="240" controls>
+        <source src="pictures/tobi video 2.mp4" type="video/mp4">
+       </video>
+      
+       <video width="320" height="240" controls>
+        <source src="pictures/tobi video.mp4" type="video/mp4">
+       </video>
+       
+       <video width="320" height="240" controls>
+        <source src="pictures/tobi video 3.mp4" type="video/mp4">
+       </video>
+       
+       <video width="320" height="240" controls>
+        <source src="pictures/tobi video 4.mp4" type="video/mp4">
+       </video>
+
+      </div>
+
+      <div class="grid">
+
+        <img
+        src="pictures/tobi 3.jpg"
+        />
+
+        <img
+          src="pictures/tobi pic.jpg"
+        />
+
+        <img
+          src="pictures/tobi.jpg"
+        />
+        <img
+          src="pictures/tobiio.jpg"
+        />
+
+        <br />
+      </div>
+      <p>
+        Happy Birthday to the love of my life! 🥳❤️ 
+        <br /> 
+        Even though we're apart, you're on my mind and in my heart every second of today. I wish I could be there to pamper you, hold you and celebrate the amazing person you are.  
+        You make my world brighter, my heart fuller and my life so much better. I am so lucky to call you mine and I can't wait for the day we are together again to celebrate properly.  
+        Until then, know that I am sending you all my love, hugs and the biggest birthday kiss ever! 
+        <br />
+        Have the best day love, you deserve it more than anyone. 💕
+      </p>
+      <a href=" https://www.pinterest.com/pin/583849539226534404/"
+       target="_blank">
+        <strong>💕A lil quote for you </strong>
+      </a>
+
+    </div>
+    <footer>
+      coded with 💗 by
+      <a
+        href="https://www.linkedin.com/in/yetunde-adeniji?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bmgr0FRBBRWCMfmo%2BjnIz4A%3D%3D"
+        target="_blank"
+      >
+        yetty
+      </a>
+    </footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
